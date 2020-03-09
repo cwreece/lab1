@@ -1,0 +1,10 @@
+---
+- name: "PLAY 1: Manage NTP configuration"
+  hosts: "all"
+  tasks:
+    - name: "TASK 1: Apply NTP updates"
+      ios_config:
+        lines:
+          - "ntp server {{ ntp_server1 }}"
+          - "ntp server {{ ntp_server2 }}"
+...
