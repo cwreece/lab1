@@ -18,4 +18,5 @@ before_script:
 # A more complex pipeline might deploy on-demand routers ahead of time
 # using Terraform rather than assume they already exist.
 script:
-  - "ansible-playbook test1.yml"
+  - "ansible-playbook test1.yml"  # add test servers, then remove
+  - "ansible-playbook ntp_config.yml"  # add real servers
