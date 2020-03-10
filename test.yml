@@ -4,6 +4,8 @@
 # playbook and pass in some custom NTP servers instead. Using
 # static inputs is a good way to "stub out" our variables file
 # for the purpose of testing the playbook's logic.
+#
+# Adding some notes
 - name: "PLAY 1: Import original playbook with mock NTP servers"
   import_playbook: "ntp_config.yml"
   vars:
